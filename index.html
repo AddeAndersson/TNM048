@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+    Authors: Joel Paulsson, Adrian Andersson & Johan Fröberg
+    Date: 19 Feb, 2020
+
+    TNM048, Project: Climate change dashboard
+-->
+
+<html lang="en">
+
+    <head>
+            <meta charset="utf-8">
+            <title>TNM048 climate change dashboard</title>
+            <link rel="stylesheet" href="./css/main.css">
+            <link rel="stylesheet" href="./css/map.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css"/>
+            <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+
+            <!--FONTS-->
+            <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet"> <!--font-family: 'Odibee Sans', ;-->
+            <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 
+
+    </head>
+        
+        <!-- Create a div where the graph will take place -->
+        <div id="container">
+            <div id="title" class="text"> 
+                Climate change dashboard
+            </div>
+            <div id="map-and-charts">
+                <div id="map-container">
+                    <div id="mapid"></div>
+                </div>
+                <div id="charts">
+                    <div id="top-chart"></div>
+                    <div id="mid-chart"></div>
+                    <div id="bottom-chart"></div>
+                </div>
+            </div>
+            <div id="context"></div>
+            
+        </div>
+
+    
+    <!-- Scripts goes here: -->
+    <script type=text/javascript src="jquery/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet-src.js"></script>
+    <script src="http://unpkg.com/leaflet@1.3.1/dist/leaflet.js"></script>
+    <script src="./js/leaflet-providers.js"></script>
+    <script src="./js/d3.legend.js"></script>
+    
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/regression@2.0.1/dist/regression.min.js"></script><
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+   
+
+    <!-- End of scripts -->
+    <script src="./js/focusPlusContext.js"></script>
+    <script src="./js/map.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/CO2lineChart.js"></script>
+    <script src="./js/naturalDisLineChart.js"></script>
+    <script src="./js/precipitationBar.js"></script>
+
+    
+
+
+</html>
+
+

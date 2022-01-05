@@ -1,0 +1,182 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat';
+    background-color: #292929;
+    overflow: hidden;
+    color: black;
+
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.precipitation rect{
+    z-index: -1;
+}
+
+.legend rect {
+    fill-opacity: 0;
+}
+
+#title{
+    text-align: center;
+    height: 5%;
+    color: rgb(220, 220, 220);
+    margin: 5px;
+    top: 0px;
+    font-size: 2em;
+}
+
+#map-and-charts {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: row;
+    /*background-color: green;*/
+    height: 70%;
+    width: 100%;
+}
+
+#map-container {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100%; 
+    width: 100%;
+    min-height: 300px;
+    min-width: 400px;
+}
+
+#charts {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    /*background-color: gray;*/
+    height: 100%;
+    width: 100%;
+    padding-left: 10px;
+    overflow: hidden;
+
+}
+
+#top-chart{
+    flex: 0 1 auto;
+    height: 33.33%;
+    width: 100%;
+
+    
+}
+
+#mid-chart{
+    flex: 0 1 auto;
+    height: 33.33%;
+    width: 100%;
+    z-index: 1;
+}
+
+#bottom-chart{
+    flex: 0 1 auto;
+    height: 33.33%;
+    width: 100%;
+    overflow: visible;
+}
+
+#context {
+    flex: 0 1 auto;
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*Color of axes*/
+.axis {
+    stroke: rgb(220, 220, 220);
+}
+
+.axis line {
+    stroke: rgb(220, 220, 220);
+}
+
+.axis path {
+    stroke: rgb(220, 220, 220);
+}
+
+.text {
+    fill: rgb(220, 220, 220);
+}
+
+text {
+    fill: rgb(220, 220, 220);
+    stroke: none;
+}
+
+.visible {
+    overflow: visible;
+    color: white;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.overlay {
+    fill: none;
+    pointer-events: all;
+}
+
+.overlay_nat {
+    fill: none;
+    pointer-events: all;
+}
+
+.label {
+    font-size: 10px;
+}
+
+.focus {
+    z-index: 1000;
+    height: 50px;
+    width: 100px;
+}
+
+.focus circle {
+    fill: #e31a1c;
+    z-index: 200;
+}
+.focus text {
+    font-size: 14px;
+    fill: none;
+    stroke: #000;
+}
+
+.focus {
+    font-size: 14px;
+}
+
+.tooltip {
+    fill: rgb(220, 220, 220);
+    color: rgb(220, 220, 220);
+    stroke: #000;
+    z-index: 1000;
+}
+
+.tooltip-date, .tooltip-value {
+    font-weight: bold;
+    stroke: #000;
+    z-index: 1000;
+}
